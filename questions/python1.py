@@ -302,7 +302,15 @@ def nine(input):
 	# help(str) and help(list), you might also need to use a function that can create a list of numbers for you, try help(range).
 
 def ten(input):
-	return []
+    records = input.split(",")
+    owners = set()
+
+    for i in range(0, len(records), 4):
+        owner, _, is_encrypted, _ = records[i:i+4]
+        if is_encrypted == 'False':
+            owners.add(owner)
+
+    return list(owners)
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
