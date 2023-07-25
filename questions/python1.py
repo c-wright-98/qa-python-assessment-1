@@ -234,7 +234,11 @@ def seven(inputString, char):
 	# help(int) for working with numbers and help(str) for working with Strings.
 
 def eight(arg1):
-	return 0
+    max_num = 0
+    for num in arg1.split():
+        sum_digit = sum(int(i) for i in num)
+        max_num = max(max_num, sum_digit)
+    return max_num
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
