@@ -123,6 +123,8 @@ def four(input):
         return False
     elif "ie" in input:
         return True
+    else:
+        return True
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -167,7 +169,16 @@ def five(input):
 	# How do we find the length of a container, take a look at help(len), you will also need to look at help(str) for String manipulation.
 
 def six(string, int, char):
-	return False
+    string = string.lower()
+    if int <= len(string):
+        index = string.find(char)
+        index += 1
+        if index == int:
+            return True
+        elif index != int:
+            return False
+    else:
+        return False
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
