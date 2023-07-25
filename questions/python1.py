@@ -129,7 +129,7 @@ def four(input):
 	# <QUESTION 5>
 
 	# Write a function which takes an input (between 1 and 10 inclusive) and multiplies it by all the numbers before it.
-	# eg If the input is 4, the function calculates 4x3x2x1 = 24 
+	# eg If the input is 4, the function calculates 4x3x2x1 = 24
 
 	# <EXAMPLES>
 
@@ -142,7 +142,10 @@ def four(input):
 	# You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def five(input):
-	return 1
+    result = 1
+    for i in range(1, input + 1):
+        result *= i
+    return result
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
