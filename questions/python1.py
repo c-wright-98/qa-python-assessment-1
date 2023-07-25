@@ -201,7 +201,13 @@ def six(string, int, char):
 	# Take a look at the documentation for Strings, List and range.
 
 def seven(inputString, char):
-	return -1
+    string = inputString.replace(" ", "")
+    if char in string:
+        index = string.find(char)
+        index += 1
+        return index
+    else:
+        return -1
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
